@@ -1,3 +1,4 @@
+
 name: Deploy Next.js to GitHub Pages
 
 on:
@@ -31,6 +32,12 @@ jobs:
 
       - name: Build Next.js app
         run: npm run build
+
+      - name: Verify build output
+        run: |
+          ls -la
+          test -d out || (echo "The out directory was not generated" && exit 1)
+          ls -la out
 
       - name: Add .nojekyll
         run: touch out/.nojekyll
