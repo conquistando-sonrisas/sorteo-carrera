@@ -197,7 +197,7 @@ export default function Home() {
         <div className="brand">
           <span className="brand-icon">
             <img
-              src='/conqui.svg'
+              src='/sorteo-carrera/conqui.svg'
               height={34}
               width={34} />
           </span>
@@ -297,7 +297,7 @@ export default function Home() {
           <video
             style={{ borderRadius: '15px' }}
             ref={videoRef}
-            src="/policarpo.mp4"
+            src="/sorteo-carrera/policarpo.mp4"
             data-visible={isDrawing}
             muted
             playsInline
