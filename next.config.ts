@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  output: 'export', // Enforces static export
+  images: {
+    unoptimized: true, // Required if using the Next.js <Image> component
+  },
 };
 
 export default nextConfig;
