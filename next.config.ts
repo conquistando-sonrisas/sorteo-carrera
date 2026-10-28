@@ -11,9 +11,11 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  trailingSlash: true,
   images: {
     unoptimized: true, // Required if using the Next.js <Image> component
   },
+  basePath: '/sorteo-carrera'
 };
 
 export default nextConfig;
